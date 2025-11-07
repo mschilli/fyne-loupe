@@ -1,4 +1,4 @@
-# fyne-louple
+# fyne-loupe
 
 A Fyne widget to show a photo in a scrolled container with
 mouse panning enabled.
