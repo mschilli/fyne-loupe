@@ -1,7 +1,6 @@
 package loupe
 
 import (
-	"fmt"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/container"
@@ -75,7 +74,6 @@ func (l *Loupe) CreateRenderer() fyne.WidgetRenderer {
 func (l *Loupe) Center() {
 	x := float32(l.bounds.Dx()/2) - l.Scroll.Size().Width/2.0
 	y := float32(l.bounds.Dy()/2) - l.Scroll.Size().Height/2.0
-	fmt.Printf("Centering to %f/%f\n", x, y)
 	l.Scroll.Offset = fyne.NewPos(x, y)
 	l.Scroll.Refresh()
 }
